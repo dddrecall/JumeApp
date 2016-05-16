@@ -1,0 +1,109 @@
+android.support.annotation.AnimRes
+android.support.annotation.AnimatorRes
+android.support.annotation.AnyRes
+android.support.annotation.ArrayRes
+android.support.annotation.AttrRes
+android.support.annotation.BoolRes
+android.support.annotation.ColorRes
+android.support.annotation.DimenRes
+android.support.annotation.DrawableRes
+android.support.annotation.FractionRes
+android.support.annotation.IdRes
+android.support.annotation.IntDef
+android.support.annotation.IntegerRes
+android.support.annotation.InterpolatorRes
+android.support.annotation.LayoutRes
+android.support.annotation.MenuRes
+android.support.annotation.NonNull
+android.support.annotation.Nullable
+android.support.annotation.PluralsRes
+android.support.annotation.RawRes
+android.support.annotation.StringDef
+android.support.annotation.StringRes
+android.support.annotation.StyleRes
+android.support.annotation.StyleableRes
+android.support.annotation.XmlRes
+org.bybbs.jume.AppManager:
+    private static final int MSG_LOAD_START
+    private static final int MSG_LOAD_FINISH
+    288:344:public static org.bybbs.jume.ProxyedApp[] getProxyedApps(android.content.Context,boolean)
+org.bybbs.jume.BuildConfig
+org.bybbs.jume.ColorScheme:
+    private static final java.lang.String FONT_COLOR
+    private static final java.lang.String BACKGROUP_COLOR
+    private static final java.lang.String STRING_COLOR
+    private static final java.lang.String KEYWORD_COLOR
+    private static final java.lang.String COMMENT_COLOR
+    private static final java.lang.String TAG_COLOR
+    private static final java.lang.String ATTR_NAME_COLOR
+    private static final java.lang.String FUNCTION_COLOR
+    private static java.lang.String[] schemeNames
+    21:21:public ColorScheme()
+    54:63:public static void init()
+    136:136:public static void loadAllScheme()
+    141:143:public static java.lang.String[] getSchemeNames()
+org.bybbs.jume.DLoader:
+    35:39:public DLoader(android.content.Context)
+    111:115:public void dimss()
+    167:176:public void dnotify()
+org.bybbs.jume.DShell:
+    55:56:public void setHandler(android.os.Handler)
+org.bybbs.jume.HtmlUtil:
+    private static final java.lang.String regEx_script
+    private static final java.lang.String regEx_style
+    private static final java.lang.String regEx_html
+    private static final java.lang.String regEx_space
+    5:5:public HtmlUtil()
+    24:39:public static java.lang.String delHTMLTag(java.lang.String)
+    43:46:public static java.lang.String getTextFromHtml(java.lang.String)
+org.bybbs.jume.ImageLoader:
+    138:144:public void clearCache()
+    245:246:public void stopThread()
+org.bybbs.jume.ImageLoaderFactory:
+    40:40:public ImageLoaderFactory()
+org.bybbs.jume.MainActivity:
+    android.preference.EditTextPreference qj_gx
+    android.preference.EditTextPreference zd_wk
+    android.preference.EditTextPreference qt_fx_port
+    android.preference.PreferenceScreen ks1
+    android.preference.Preference zd_quid
+    630:636:void set_Text_1(android.preference.Preference,java.lang.String)
+org.bybbs.jume.ProxyedApp:
+    33:33:public boolean isEnabled()
+    78:78:public java.lang.String getProcname()
+org.bybbs.jume.R:
+    10:10:public R()
+org.bybbs.jume.R$array
+org.bybbs.jume.R$attr
+org.bybbs.jume.R$bool
+org.bybbs.jume.R$color
+org.bybbs.jume.R$dimen
+org.bybbs.jume.R$drawable
+org.bybbs.jume.R$id
+org.bybbs.jume.R$integer
+org.bybbs.jume.R$layout
+org.bybbs.jume.R$string
+org.bybbs.jume.R$style
+org.bybbs.jume.R$styleable:
+    1377:1377:public R$styleable()
+org.bybbs.jume.R$xml
+org.bybbs.jume.SchemeTable
+org.bybbs.jume.SuperUser:
+    public static final java.lang.String SHELL
+    public static final java.lang.String ROOT
+    272:350:public static boolean rw(android.content.SharedPreferences,android.os.Handler)
+    356:375:public void CopyFileFromAssets(java.lang.String,java.lang.String,java.lang.String)
+    494:507:public static int getUid(android.content.Context,java.lang.String)
+    512:526:public static android.content.pm.Signature[] getRawSignature(android.content.Context,java.lang.String)
+    556:588:public static boolean copyFile(java.lang.String,java.lang.String)
+org.bybbs.jume.TabIndicatorView:
+    52:54:public TabIndicatorView(android.content.Context,android.util.AttributeSet)
+org.bybbs.jume.highlight:
+    public static final int GROUP_TAG_ID
+    public static final int GROUP_COMMENT_ID
+    public static final int GROUP_STRING_ID
+    public static final int GROUP_KEYWORD_ID
+    public static final int GROUP_FUNCTION_ID
+    public static final int GROUP_ATTR_NAME_ID
+    private static final java.lang.String TAG
+    51:52:public void stop()

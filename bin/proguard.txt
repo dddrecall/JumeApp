@@ -1,0 +1,78 @@
+# view res/layout/abs__screen_action_bar.xml #generated:44
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:27
+# view res/layout/abs__screen_simple.xml #generated:32
+# view res/layout/abs__screen_simple_overlay_action_mode.xml #generated:27
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:44
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:25
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout { <init>(...); }
+
+# view large-v4\res/layout-large-v4/abs__action_mode_close_item.xml #generated:17
+# view res/layout/abs__action_mode_close_item.xml #generated:17
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abs__action_menu_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abs__popup_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:27
+# view res/layout/abs__screen_action_bar.xml #generated:51
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:30
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:53
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:27
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:28
+-keep class com.actionbarsherlock.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abs__action_mode_bar.xml #generated:19
+# view res/layout/abs__screen_action_bar.xml #generated:37
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:41
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:37
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:38
+-keep class com.actionbarsherlock.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:32
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:36
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar.xml #generated:32
+# view xlarge-v4\res/layout-xlarge-v4/abs__screen_action_bar_overlay.xml #generated:33
+-keep class com.actionbarsherlock.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abs__action_bar_home.xml #generated:17
+-keep class com.actionbarsherlock.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:40
+-keep class com.actionbarsherlock.internal.widget.CapitalizingButton { <init>(...); }
+
+# view res/layout/abs__activity_chooser_view.xml #generated:19
+-keep class com.actionbarsherlock.internal.widget.IcsLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_bar_tab.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abs__action_bar_tab_bar_view.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.TabsLinearLayout { <init>(...); }
+
+# view res/layout/abs__search_view.xml #generated:84
+-keep class com.actionbarsherlock.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class org.bybbs.jume.AppManager { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class org.bybbs.jume.Appinfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class org.bybbs.jume.Edit_mode { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class org.bybbs.jume.HippoStartupIntentReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class org.bybbs.jume.MainActivity { <init>(...); }
+
+# view res/layout/edit_mode.xml #generated:9
+-keep class org.bybbs.jume.ViewPagerIndicatorView { <init>(...); }
+

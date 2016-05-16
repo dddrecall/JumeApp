@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_vertical">
+
+	<org.bybbs.jume.ViewPagerIndicatorView
+		android:id="@+id/edit_viewpager_indicator_view"
+		android:layout_width="match_parent"
+		android:layout_marginBottom="48dip"
+		android:layout_height="match_parent"
+		
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="保存"
+			android:layout_width="match_parent"
+
+			android:id="@+id/e_bsave"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

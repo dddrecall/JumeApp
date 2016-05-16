@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="#00000000"
+    android:key="main" >
+
+    <PreferenceCategory
+        android:key="set_qjft"
+        android:title="全局防跳选项" >
+        <CheckBoxPreference
+            android:key="isRunning"
+            android:summary="开启防跳"
+            android:title="开启防跳" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:key="ft_status"
+            android:summary="查看防跳运行状态"
+            android:title="防跳状态" >
+        </Preference>
+
+        <EditTextPreference
+            android:defaultValue="3004"
+            android:key="qj_uid"
+            android:summary="3004"
+            android:title="全局UID" />
+        <EditTextPreference
+            android:defaultValue="127.0.0.1:8787"
+            android:key="qj_proxy"
+            android:summary="127.0.0.1:8787"
+            android:title="全局转发IP:端口" />
+
+        <CheckBoxPreference
+            android:key="qj_zl"
+            android:summary="单脚本直连共享"
+            android:title="直连代理" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="key1"
+        android:title="本机|共享防跳规则" >
+        <ListPreference
+            android:defaultValue="A"
+            android:dialogTitle="选择本机防跳规则"
+            android:entries="@array/gz_d"
+            android:entryValues="@array/gz_d_v"
+            android:key="qj_bj"
+            android:summary="A"
+            android:title="本机防跳规则" />
+        <ListPreference
+            android:defaultValue="A"
+            android:dialogTitle="选择共享防跳规则"
+            android:entries="@array/gz_d"
+            android:entryValues="@array/gz_d_v"
+            android:key="qj_gx"
+            android:summary="A"
+            android:title="共享防跳规则" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="key2"
+        android:title="启用的防跳模块" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="m_tcp"
+            android:summary="启用TCP(u2nl/hu2nl/redsocks)模块"
+            android:title="TCP代理模块" />
+        <CheckBoxPreference
+            android:key="m_dns"
+            android:summary="启用DNS(dnsp/pdnsd)模块"
+            android:title="DNS代理模块" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:dependency="m_tcp"
+        android:key="key3"
+        android:title="TCP转发模块" >
+        <ListPreference
+            android:defaultValue="u2nl"
+            android:dialogTitle="选择TCP代理模块"
+            android:entries="@array/tcp_d"
+            android:entryValues="@array/tcp_d_v"
+            android:key="l_tcp_m"
+            android:summary="未选择模块"
+            android:title="TCP代理模块" />
+
+        <EditTextPreference
+            android:defaultValue="10.0.0.172:80"
+            android:key="tcp_p_ip"
+            android:summary="10.0.0.172:80"
+            android:title="TCP模块转发服务器" />
+        <EditTextPreference
+            android:defaultValue="1256"
+            android:key="tcp_lport"
+            android:summary="1256"
+            android:title="TCP模块监听端口" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:dependency="m_dns"
+        android:key="key4"
+        android:title="DNS转发模块" >
+        <ListPreference
+            android:defaultValue="dnsp"
+            android:dialogTitle="选择DNS代理模块"
+            android:entries="@array/dns_d"
+            android:entryValues="@array/dns_d_v"
+            android:key="l_dns_m"
+            android:summary="未选择模块"
+            android:title="DNS代理模块" />
+
+        <EditTextPreference
+            android:defaultValue="114.114.114.114"
+            android:key="dns_pip"
+            android:summary="114.114.114.114"
+            android:title="PDNSD模块代理IP" />
+        <EditTextPreference
+            android:defaultValue="http://jumedns.aiyun.co"
+            android:key="dns_http"
+            android:summary="http://jumedns.aiyun.co"
+            android:title="DNSP模块在线解析地址" />
+        <EditTextPreference
+            android:defaultValue="54321"
+            android:key="dns_lport"
+            android:summary="54321"
+            android:title="DNS模块监听端口" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="key5"
+        android:title="自定义本机设置" >
+        <Preference
+            android:key="cpy_uid"
+            android:summary="进入复制应用UID界面"
+            android:title="复制应用UID" >
+        </Preference>
+        <Preference
+            android:key="zd_buid"
+            android:summary="无UID"
+            android:title="半代理应用" />
+        <Preference
+            android:key="zd_fxuid"
+            android:summary="无UID"
+            android:title="不代理应用" />
+        <Preference
+            android:key="zd_juid"
+            android:summary="1000"
+            android:title="禁联网应用" />
+        <Preference
+            android:key="zd_dfudp"
+            android:summary="无UID"
+            android:title="单放UDP应用" />
+        <Preference
+            android:key="zd_dfhttps"
+            android:summary="无UID"
+            android:title="单放HTTPS应用" />
+
+        <EditTextPreference
+            android:key="zd_dnsip"
+            android:summary="无IP则为默认dns"
+            android:title="定义DNS代理IP" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="bj_dns_fx"
+            android:summary="在线视频/共享电脑等需要开启"
+            android:title="DNS放行" />
+        <CheckBoxPreference
+            android:key="bj_udp_fx"
+            android:summary="解决部分APP或网游联网问题"
+            android:title="UDP全放行" />
+        <CheckBoxPreference
+            android:key="bj_https_fx"
+            android:summary="解决部分代理HTTPS不联网"
+            android:title="HTTPS全放行" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="dy_fxwifi"
+            android:summary="共享无法获IP或无网请开启"
+            android:title="自动放行WIFI" />
+
+        <EditTextPreference
+            android:defaultValue="wlan0"
+            android:key="zd_wifi"
+            android:summary="WIFI不联网改为本机网卡"
+            android:title="定义WIFI网卡" />
+        <EditTextPreference
+            android:key="zd_sdk"
+            android:summary="不经过模块处理的端口"
+            android:title="指定TCP端口走回全局" />
+        <EditTextPreference
+            android:key="zd_fxtcp"
+            android:summary="本机TCP端口放行"
+            android:title="本机TCP端口放行" />
+        <EditTextPreference
+            android:key="zd_fxudp"
+            android:summary="本机UDP端口放行"
+            android:title="本机UDP端口放行" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="key6"
+        android:title="定义共享设置" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="dy_mdl"
+            android:summary="关后直接共享则不经代理"
+            android:title="共享免设代理" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="dy_dns"
+            android:summary="在线视频或共享电脑须开启"
+            android:title="共享设备DNS放行" />
+        <CheckBoxPreference
+            android:key="dy_udp"
+            android:summary="解决部分程序或网游等联网问题"
+            android:title="UDP放行" />
+        <CheckBoxPreference
+            android:key="dy_https"
+            android:summary="全局支持HTTPS的无需开启"
+            android:title="HTTPS放行" />
+
+        <EditTextPreference
+            android:key="dy_tcp_p"
+            android:summary="TCP端口"
+            android:title="共享设备端口放行(TCP)" />
+        <EditTextPreference
+            android:key="dy_udp_p"
+            android:summary="UDP端口"
+            android:title="共享设备端口放行(UDP)" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="key7"
+        android:title="其他选项设置" >
+
+        <!--
+            <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="qt_nh_jw"
+            android:summary="内核防跳(若发现联网有问题请关闭)"
+            android:title="内核防跳" />
+        -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="qt_dwkw"
+            android:summary="执行脚本自动关开一遍网络防止QQ乱跳等"
+            android:title="自动断网开网 " />
+
+        <EditTextPreference
+            android:defaultValue="/system/xbin/JumeApp"
+            android:key="qt_jume_path"
+            android:summary="设置脚本Jume资料库文件夹存放目录位置"
+            android:title="Jume资源库安装目录" />
+	
+        <!--  
+        <CheckBoxPreference
+            android:key="qt_fx"
+            android:summary="自动放行快牙.闪传.茄子快传数据传输协议"
+            android:title="快牙，闪传，茄子放行" />
+        -->
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="qt_qqsp"
+            android:summary="QQ视频全代理(可拨不能接)关可接但拨也不免"
+            android:title="QQ视频全代理" />
+
+    
+        <Preference
+            android:defaultValue="99999"
+            android:key="qt_qquid"
+            android:summary="QQ的UID"
+            android:title="QQ的UID" />
+        
+        <Preference
+            android:key="qt_hyuid"
+            android:summary="虎牙.YY的UID"
+            android:title="虎牙.YY的UID" />
+
+        <EditTextPreference
+            android:defaultValue="23"
+            android:key="qt_hy_dk"
+            android:summary="新版虎牙.YY放行5002或23解决不能看直播"
+            android:title="虎牙.YY的放行端口" />
+       
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="ft_worker"
+        android:title="防跳作者信息" >
+        <Preference
+            android:key="owner"
+            android:summary="防跳作者:Jume\n软件作者:淡淡的回忆"
+            android:title="终极防跳v7.0终结版" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

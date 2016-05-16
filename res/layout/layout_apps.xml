@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:duplicateParentState="false"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3px"
+        android:id="@+id/diyUid"
+       	android:background="@drawable/btitle"
+       	android:hint="自定义UID"
+       	android:textColor="#ffffff"
+       	
+        />
+
+    <ListView
+        android:id="@+id/applistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

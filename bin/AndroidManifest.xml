@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.bybbs.jume"
+    android:versionCode="11"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 创建和删除文件 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 写文件 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+
+        <!-- 委派receiver名稱為類別名稱 -->
+        <receiver android:name=".HippoStartupIntentReceiver" >
+
+            <!-- 在filter裡設定BOOT_COMPLETED為要捕捉的訊息 -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Appinfo"
+            android:label="@string/appinfo"
+            android:theme="@style/Theme.CustomDialog" >
+        </activity>
+        <activity
+            android:name=".AppManager"
+            android:label="@string/appinfo"
+            android:theme="@style/Theme.CustomDialog" >
+        </activity>
+        <activity
+            android:name=".Edit_mode"
+            android:label="@string/editSh" >
+        </activity>
+    </application>
+
+</manifest>

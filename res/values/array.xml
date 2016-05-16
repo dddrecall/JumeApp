@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string-array name="tcp_d">
+		<item>u2nl</item>
+		<item>Hu2nl</item>
+		<item>redsocks</item>
+		<item>只转发到端口</item>
+	</string-array>
+	
+	<string-array name="tcp_d_v">
+		<item>u2nl</item>
+		<item>Hu2nl</item>
+		<item>redsocks</item>
+		<item>on</item>
+	</string-array>
+	
+	<string-array name="dns_d">
+		<item>dnsp</item>
+		<item>pdnsd</item>
+		<item>只转发到端口</item>
+	</string-array>
+	
+	<string-array name="dns_d_v">
+		<item>dnsp</item>
+		<item>pdnsd</item>
+		<item>on</item>
+	
+	</string-array>
+	
+	<string-array name="gz_d">
+		<item>A</item>
+		<item>B</item>
+
+	</string-array>
+
+	
+	<string-array name="gz_d_v">
+		<item>A</item>
+		<item>B</item>
+
+	</string-array>
+	
+	
+	<string-array name="department">
+		<item>综合部</item>
+		<item>外贸部</item>
+		<item>行政部</item>
+	</string-array>
+	<string-array name="department_value">
+		<item>001</item>
+		<item>002</item>
+		<item>003</item>
+	</string-array>
+</resources>
